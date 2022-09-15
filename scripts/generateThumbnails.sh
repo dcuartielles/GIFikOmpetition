@@ -18,7 +18,7 @@ do
 	if [ "$extension" = "gif" ]; then
     		gifsicle $current_path/$line --resize-fit-width $2 > ./tmp_image && cat ./tmp_image > thumbnails/$name.$extension
 	else
-		convert $current_path/$line -resize $2 thumbnails/$name-reduced.$extension
+		convert $current_path/$line -resize $2 thumbnails/$name.$extension
 	fi
     	echo "* finished: $line"
 done <<< "$all_files"
