@@ -31,7 +31,7 @@
 			fwrite( $myfile, '<div class="date"><div class="key">Date:</div><div class="value">'.$pieces[0]."</div>\n");
 			fwrite( $myfile, '<div class="author"><div class="key">Author:</div><div class="value">'.$pieces[1]."</div>\n");
 			fwrite( $myfile, '<div class="title"><div class="key">Title:</div><div class="value">'.$pieces[2]."</div>\n"); 
-			fwrite( $myfile, '<div class="image"><a href="images/'.basename($image).'"><img src="thumbnails/'.basename($image).'" alt="'.$pieces[2]." by ".$pieces[1].'" /></a>'."</div>\n");
+			fwrite( $myfile, '<div class="image"><a href="images/'.basename($image).'"  target="_blank"><img src="thumbnails/'.basename($image).'" alt="'.$pieces[2]." by ".$pieces[1].'" /></a>'."</div>\n");
             	} else {
                 	continue;
             	}
