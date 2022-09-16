@@ -1,0 +1,8 @@
+item.key {
+	font-weight: bold;	
+}
+
+item.value {
+	font-style: italic;
+	float: right;
+}
