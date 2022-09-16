@@ -6,8 +6,11 @@
 	$myfile = fopen($argv[1]."/index.html", "w");
 
 	// prepare the file's header and footer
-	$header = "<html><header><title>GIFikOmpetition 2022 - Arduino</title></header><body>";
-	$footer = "</body></html>";
+	$header = '<html><header><title>GIFikOmpetition 2022 - Arduino</title><link rel="stylesheet" href="gifikompetition.css"></header><body>';
+	$body = '<div class="content">\n<div class="heading">GIFikOmpetition!</div>';
+	$body .= '<div class="text">Welcome to the 1st official GIF FIKA COMPETITION. This is the chance for you to get to vote for our Champion of GIFs. Browse through the thumbnails, check the large version of the images you like the most, and then go to the form to vote for the ones you think are best. You will get 5 votes to be used throughout the whole collection. The most voted GIF will be our champion.</div>';
+	$footer = '</div>';
+	$footer .= "</body></html>";
 
 	// write header
 	fwrite( $myfile,  $header );
